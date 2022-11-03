@@ -1,6 +1,14 @@
-type ExampleEntity @entity {
+type Ape @entity {
   id: ID!
-  count: BigInt!
-  owner: Bytes! # address
-  approved: Bytes! # address
+  apeID: BigInt!
+  contentURI: String!
+  createdAtTimestamp: BigInt!
+  creator: User!
+  owner: User!
+}
+
+type User @entity {
+  id: ID!
+  apes: [Ape!]!
+  creted: [Ape!]!
 }
