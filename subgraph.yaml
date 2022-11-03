@@ -8,6 +8,7 @@ dataSources:
     source:
       address: "0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D"
       abi: BoredApeYachtClub
+      startBlock: 15537393 # set to first block after The Merge on purpose
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
