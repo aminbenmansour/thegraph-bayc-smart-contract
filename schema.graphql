@@ -10,5 +10,5 @@ type Ape @entity {
 type User @entity {
   id: ID!
   apes: [Ape!]! @derivedFrom(field: "owner")
-  creted: [Ape!]! @derivedFrom(field: "creator")
+  created: [Ape!]! @derivedFrom(field: "creator")
 }
