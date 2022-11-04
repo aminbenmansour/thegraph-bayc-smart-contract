@@ -128,12 +128,12 @@ export class User extends Entity {
     this.set("apes", Value.fromStringArray(value));
   }
 
-  get creted(): Array<string> {
-    let value = this.get("creted");
+  get created(): Array<string> {
+    let value = this.get("created");
     return value!.toStringArray();
   }
 
-  set creted(value: Array<string>) {
-    this.set("creted", Value.fromStringArray(value));
+  set created(value: Array<string>) {
+    this.set("created", Value.fromStringArray(value));
   }
 }
