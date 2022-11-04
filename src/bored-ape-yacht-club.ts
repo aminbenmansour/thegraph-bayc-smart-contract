@@ -20,4 +20,10 @@ export function handleTransfer(event: TransferEvent): void {
 
   ape.owner = event.params.to.toHexString();
   ape.save();
+
+  let user = User.load(event.params.to.toHexString());
+  if (!user) {
+    user = new User(event.params.to.toHexString());
+    user.save();
+  }
 }
